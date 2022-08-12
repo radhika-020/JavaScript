@@ -1,1 +1,1 @@
-This is a main.js file that is purely dedicated to Basic JavaScript.
+This is a JavaScript file that is purely dedicated to `Basic JavaScript`.
