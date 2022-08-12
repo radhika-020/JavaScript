@@ -68,3 +68,25 @@ var firstLetterOfFirstName = 0;
 var firstName = "Radhika";
 firstLetterOfFirstName = firstName[0];
 console.log(firstLetterOfFirstName);
+
+
+// Note that strings are immutable that means they cannot be altered once created, but they can be modified or changed in one or the other way.
+var myStr = "Jello World";
+myStr[0] = "H"; // cannot chyange like this, this will give an error.
+// else do this
+myStr = "Hello World";
+
+
+// Finding the last letter of the name or letters from the end with a specified index from the end.
+var myName = "Radhika";
+var lastLetterOfName = myName[myName.length - 1];
+
+
+// Creating madlibs using a function, a game in which you can provide your own set of words as the arguments of the function to make it funny or appealing to the user.
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+var result = "";
+result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + quickly.";
+return result;
+
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
+console.log(result); // The big dog ran to the store quickly.
