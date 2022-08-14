@@ -90,3 +90,95 @@ return result;
 
 console.log(wordBlanks("dog", "big", "ran", "quickly"));
 console.log(result); // The big dog ran to the store quickly.
+  
+  
+  var arr = ['Radihika', 20];
+  
+  
+  // Multidimensional or Nested Array :- In this, each element is an array itself.
+  var arr = [['Radhika', 20], ['Arora', 20]]
+  
+  
+  var arr = [50, 60, 70]
+  var arrIndex = arr[0];
+  console.log(arrIndex); // will print 50 on the console.
+  
+  
+  var arr = [50, 60, 70];
+  arr[0] = 40;
+  console.log(arr); // will print [40, 60, 70] on the console.
+  
+  
+  var arr = [[1, 2, 3], [4, 5, 6], [[7, 8, 9], [10, 11, 12]]];
+  var myIndex = arr[0][0];
+  console.log(myIndex); // will print 1 on the console as [1, 2, 3] is the 0th index for the first 0, and 1 is the 0th index for the second 0.
+  
+  
+  // Adding elements at the end of the array.
+  var arr = ['Radhika', 20];
+  arr.push(['Arora', 20]);
+  console.log(arr); // will print [['Radhiika', 20], ['Arora', 20]]
+  
+  
+  // Removing elements from the array
+  // Pop function removes the end element from the array.
+  var arr = [1, 2, 3];
+  var removeItem = arr.pop();
+  console.log(arr); // will print [1, 2] on the console.
+  
+  
+  // Removing elements from the starting of the array
+  var arr = [1, 2, 3];
+  var removeFirst = arr.shift();
+  console.log(arr); // will print [2, 3] on the console.
+  
+  
+  // Adding elements at the beginning of the array
+  var arr = [1, 2, 3];
+  arr.unshift(0);
+  console.log(var); // will print [0, 1, 2, 3] on the console.
+  
+  
+  // Functions allow us to create reusable code in JavaScript.
+  function reusableCode() {
+    console.log("Hello world");
+  }
+  reusableCode(); // will print Hello World on the console.
+  
+  // function with arguments/ parameters
+  function add(a, b) {
+    console.log(a+b);
+  }
+  add(2, 3); // will print 5 on the console.
+  
+  
+  // Scope refers to the visibility of variables.
+  // Variables which are defined outsite the function have global scope which can be seen from everywhere from the JavaScript.
+  var global = 10;
+  function a1(){
+    global_1 = 5; // if we use var keyword here, then global_1 will be scoped to this function, but since we haven't used var keyword here, then this is global variable for all the other functions and this can be then used inside the other function as a global variable.
+  }
+  
+  function a2(){
+    var output = "";
+    if (typeof global != "undefined"){
+      output + = global
+    }
+    if (typeof global_1 != "undefined"){
+      output + = global_1
+    }
+    console.log(output);
+    a1();
+    a2();
+    
+    
+    // Variables which are declared inside the function as well as the function parameters, are considered as local variables.
+    function fun1() {
+      var myVar = 10;
+      console.log(myVar);
+    }
+    fun1(); // will print 10 on the console
+    console.log(myVar); // will give you an error saying that myVar is undefined.
+  
+  
+  
