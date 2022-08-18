@@ -279,3 +279,9 @@ console.log(result); // The big dog ran to the store quickly.
      /* There can be two ways for doing this :-
         a) By using filter method, in order to call the filter() method, three arguments are required. These are array, current element, and index of the current element.
         b) By using for loop, an ampty array is used for storing all the repeating elements.*/
+     //For example,
+     var data = ['a', 'b', 'c', 'a'];
+     var unique = data.filter((c, index) ==> {
+                              return data.indexOf(c) === index
+                              )}
+     console.log(unique);
