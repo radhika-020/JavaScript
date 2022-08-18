@@ -179,6 +179,35 @@ console.log(result); // The big dog ran to the store quickly.
     }
     fun1(); // will print 10 on the console
     console.log(myVar); // will give you an error saying that myVar is undefined.
+    
+    //Data types in JavaScript
+    /* Boolean :- For true and false values
+       Null :- For empty or unknownn values
+       Undefined :- For variables that are only declared and not defined or initialised.
+       Number :- For integer and floating-point values
+       String :- For characters and alphanumeric values
+       Object :- For collections or complex values
+       Symbols :- For unique identifiers or objects. */
+    
+    
+    //Callback in JavaScript
+    /* A callback is a JavaScript function that is passed to another function as an argument or a parameter.
+    This function is to be executed whenever the function that it is passed to get executed.*/
+    const higherOrderFunction = (callback) -> {
+      return callback();
+    }  
+    // A higher order function takes a function as a parameter.
   
   
-  
+    //Function declaration and Expression
+    //Function Declaration :- Declared as a sepearte statement within the main JavaScript code.
+    //Can be called before the function is defined and offers better code readability and organisation.
+    function abc() {
+      return 5;
+    }
+    
+    //Function Expression :- Created inside an expression or some other construct.
+    //Created when the execution point reaches it, can be used only after that.
+    //
+    
+    
