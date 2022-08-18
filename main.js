@@ -196,7 +196,17 @@ console.log(result); // The big dog ran to the store quickly.
     const higherOrderFunction = (callback) -> {
       return callback();
     }  
-    // A higher order function takes a function as a parameter.
+    //A higher order function takes a function as a parameter.
+    const getBlogs = (cb) => {
+      setTimeout(() => {
+        cb({
+          title: "Welcome to JavaScript"
+        })
+      }, 2000);
+    }
+    getBlogs((bp) => {
+      console.log(bp.title)
+    })
   
   
     //Function declaration and Expression
@@ -208,6 +218,64 @@ console.log(result); // The big dog ran to the store quickly.
     
     //Function Expression :- Created inside an expression or some other construct.
     //Created when the execution point reaches it, can be used only after that.
-    //
+    //Used when there is a need for a conditional declaration of a function.
+    var a = function abc() {
+      return 5;
+    }
     
     
+    //Cookies in JavaScript
+    //A cookie is generally a small data that is from a website and stored on the user's machine by a web browser that was used to aceess the website. It is stored in the form of a text file.
+    //Cookies are used to remember information for later use and also to record the browsing activity on a website.
+    //The simplest way of cheating a cookie using JavaScript is as below :-
+    document.cookie = "key1 = value; key2 = value2; expires = date;"
+    
+
+    //Closures in JavaScript
+    //Closures in JavaScript is a feature where an inner function has acess to the outer function's variables.
+    //It has three scopes :-
+      //a) Has access to its own scope, i.e., the variable defined within its curly braces.
+      //b) Has access to the variables of the outer functions.
+      //c) Has access to the global variables.
+      //For example,
+        function outer_func() {
+          var b = 10;
+          function inner_func() {
+            var a = 20;
+            console.log(a + B0; }
+          return inner;
+        }
+        //The inner function inner_func() can access its variable 'a' and the outer variable 'b'.
+  
+  
+     //Imports and Exports in JavaScript
+     //In javaScript, we cannot import anything unless we have exported it in the another file. For example,
+     export const sqrt = Math.sqrt;
+     export function square(x) {
+       return x * x;
+     }
+     export function diag(x, y) {
+       return sqrt (square(x) + square(y));
+     }//Save this file with the name of calc.
+  
+     import { square, diag } from "calc";
+     console.log(square(4)); // 16
+     console.log(diag(4, 3)); // 5
+  
+  
+     //Undefined variable :- The variable which is declared but has not been assigned any value yet. For example,
+     var x;
+     console.log(x);
+  
+     //Null :- NULL is an assignment value that we can assign to any variable that is meant to contain no value. For example,
+     var y = NULL;
+     console.log(y);
+  
+     //Umdeclared :- Variables that are not declared or that do not exist in a program or application. For example,
+     console.log(z);
+  
+  
+     //Remove Duplicates from an array in JavaScript
+     /* There can be two ways for doing this :-
+        a) By using filter method, in order to call the filter() method, three arguments are required. These are array, current element, and index of the current element.
+        b) By using for loop, an ampty array is used for storing all the repeating elements.*/
