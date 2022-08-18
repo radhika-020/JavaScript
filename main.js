@@ -285,3 +285,33 @@ console.log(result); // The big dog ran to the store quickly.
                               return data.indexOf(c) === index
                               )}
      console.log(unique);
+
+
+//JavaScript is a dynamic language because the datatypes of the variables can chnage at runtime. For example,
+<script>
+  var x = 0; // x is a number
+  x++;
+  x = "String"; // x is a string
+  x = true; // x is a boolean value.
+</script>
+
+
+// To determine the data type of the variable in the JavaScript, typeOf(variable name) function is used.
+
+
+// JS hoisting :- It is a function mechanism in which the declaration of variables and function are moved to the top of the scope.
+
+
+// When a variable is decalared without the var keyword, then it is termed as a global variable.
+
+
+// use strict keyword stricty checks if the variable is defined using the var keyword. And if not, it throws up an exception. 
+
+
+// IIFE :- Immediately Invoked Function Expression, it does not have a name, is anonymous, and gets immediately invoked, is self imnvoking.
+// For example :-
+(function() {
+  var y = 10; // This variable is local in IIFE and it cannot be accessed outside the IIFE function.
+  alert("I am IIFE");
+})(); // These two parenthesis says that the function is invoked immediately.
+alert(y);
