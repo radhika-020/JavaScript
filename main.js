@@ -362,3 +362,39 @@ alert(y);
 
 
 // Inheritance 
+// In JS, there is an object inheritance. Done by using prototype inheritance. 
+// Every JS Object has a prototype object. It's an inbuilt object provided by JavaScript.
+// Prototype chaining is a process where the property/methods are first checked in the current object, ifnot found, then it checks in the prototype object, if it again does not find in that, it tries checking the prototypes prototype object, until it get the prototype object NULL. It is like a linked list.
+
+
+// Let keyword was introduced in the ES6 JS, and it helps to create immediate block level local scope.
+
+
+// Let keywords are hoisted but they are not initialised with any value beore the declaration of the variable unlike var keyword wich initialises the variable with an undefined value at the first. Let keyword gives us an uninitialised error.
+// For example,
+    console.log(y); // y = undefined
+    console.log(x); // x = referenceError : Cannot access 'x' before initialisation.
+    let x = 10;
+    var y = 10;
+    
+    
+// Temporal Dead zone 
+// TDZ is a period or it's a state of a variable where variables are named in memory but they are not initialised with any value. Just like the let keyword.
+
+
+// Let VS Var 
+// Let is more strict in terms of scoping and initialisation.
+// Let only allows the access of variables in its immediate enclosing block or scope, but var allows the access of the variable in the full function body.
+// Value in ley keyword is initialised with nothing and it provides hoisting.
+// For example,
+function Test(){
+  if(1==1){
+    console.log(x);
+    console.log(y);
+    let y = 10; // y is accessible only inside the if block.
+    var x = 10; // x is accessible anywhere inside the function.
+  }
+  console.log(x);
+  console.log(y);
+}
+// Var keyword is a function scope. Initialises the value of the variable by undefined and provides hoisting.
