@@ -315,3 +315,17 @@ console.log(result); // The big dog ran to the store quickly.
   alert("I am IIFE");
 })(); // These two parenthesis says that the function is invoked immediately.
 alert(y);
+
+
+// Name collision occurs when same name of function and variables are declared in the program. This wll throw an error.
+// IIFE solves Name Collision problem because IIFE is an anonymous function.
+// A function with a name can have name collision but IIFE can never have name collision. This is the main difference between Normal function and IIFE function.
+
+
+// Design patterns are time tested architecture solutions. So, to create a single instance we can use singleton pattern, if the object creational process is complex, we can use factory pattern and so.
+// Module design pattern or the module revealing problem is the most used design pattern.
+
+
+// Module pattern or revealing module pattern has 2 big advantages :-
+// Self-contained independent components.
+// Provides Encapsulation and Abstraction.
