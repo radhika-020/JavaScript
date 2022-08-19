@@ -327,5 +327,38 @@ alert(y);
 
 
 // Module pattern or revealing module pattern has 2 big advantages :-
-// Self-contained independent components.
+// Self-contained independent components, logical grouping, better structure code. because of IIFE
 // Provides Encapsulation and Abstraction.
+
+
+// Module design pattern is a combination of IIFE(namespace) and Closures(Encapsulation).
+
+
+// Different ways to create a JavaScript object :-  
+  // a) Using Literal
+        var pat = {"name":"", "address":""};
+        pat.Admit = function() {
+          alert("I am admitted");
+        }
+  // b) Using object.create
+        var patnew = Object.create(pat); // creating instance from a current object.
+        patnew.age = 10;
+  // c) Using Constructor/Funcion 
+         function patient(){
+           this.name = "";
+           this.address = "";
+           this.Admit = function(){
+           }
+         }
+         var pat1 = new patient();
+  // d) ES6 instances or classes :-
+         class PatientClass{
+           constructor(name, addresss){
+             this.name = "";
+             this.address = "";
+           }
+         }
+         var p = new PatientClass(); // instance of the class
+
+
+// Inheritance 
